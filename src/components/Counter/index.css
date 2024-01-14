@@ -1,0 +1,24 @@
+@property --n {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+.counter {
+    animation: animate var(--duration) forwards var(--timing, linear);
+    counter-reset: num var(--n);
+}
+
+.counter::before {
+    content: counter(num);
+}
+
+@keyframes animate {
+    from {
+        --n: var(--from);
+    }
+
+    to {
+        --n: var(--to);
+    }
+}

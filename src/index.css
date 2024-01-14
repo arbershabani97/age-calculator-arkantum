@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-purple-color:hsl(259, 100%, 65%);
+  --primary-light-red-color:hsl(0, 100%, 67%);
+
+  --neutral-white-color: hsl(0, 0%, 100%);
+  --neutral-off-white-color: hsl(0, 0%, 94%);
+  --neutral-light-grey-color: hsl(0, 0%, 86%);
+  --neutral-smoke-grey-color: hsl(0, 1%, 44%);
+  --neutral-off-black-color: hsl(0, 0%, 8%);
+  
+  --font-size: 32px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 800;
+  background-color: var(--neutral-off-white-color);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
